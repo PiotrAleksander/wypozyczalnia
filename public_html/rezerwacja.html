@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wypożyczalnia Samochodów - Rezerwacja</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Reply-to" content="piotrhugonow@gmail.com" />
+	<meta name="Keywords" content="wypożyczalnia samochodów,wynajem samochodów" />
+	<meta name="Description" content="wypożyczalnia samochodów - rezerwacja" />
+	<meta name="Author" content="PiotrAleksanderMrzygłosz" />
+	<base href="rezerwacja.html">
+  	    
+        <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link href="css/jquery.datepick.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+        <script src="js/jquery.plugin.js"></script>
+        <script src="js/jquery.datepick.js"></script>
+
+        			
+</head>
+<body class="dolny">
+  <div class="container">
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+			<div class="page-header">
+				<a href="index.html"><img src="Logo_IziTom.png"></a>
+			</div>
+		</div>
+		<div class="col-md-10 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1"> <span class="sr-only">Menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">Strona G&#322;ówna</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="cennik.html">Cennik</a>
+						</li>
+						<li>
+							<a href="regulamin.html">Regulamin</a>
+						</li>
+                                                <li class="active">
+							<a href="rezerwacja.html">Rezerwacja</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown active">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kontakt<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									izitom@gmail.com
+								</li>
+
+								<li class="pull-left">
+									<p>697514821</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+					 </ul>
+					 <div class="container">
+				</div>
+				<h1>Rezerwacja</h1>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+<form action="send.php" method="post" id="contactform">
+   
+        <div class="form-group">
+              <input type="text" name="contact_name" placeholder="Imi&#281; i nazwisko" required="required" tabindex="1" class="form-control" />
+        </div>
+        <div class="form-group">
+             <input type="email" name="contact_email" placeholder="Adres e-mail" required="required" tabindex="2" class="form-control" />
+       </div>
+ <div class="checkbox">
+    <label><input type="checkbox" name="renault" value="yes">Renault Clio</label>
+  </div>
+ <div class="checkbox">
+    <label><input type="checkbox" name="ducato" value="yes">Fiat Ducato</label>
+  </div>
+        <div class="form-group">
+              <textarea rows="5" name="contact_body" placeholder="Dodatkowe pytanie" tabindex="3"></textarea>
+        </div>
+       
+              <div class="g-recaptcha" data-sitekey="6Le10wcTAAAAAM6YdA3HNL4ZJ7tRvb7YZh31_q6L"></div>
+              <button type="submit" class="btn btn-default">Wy&#347;lij</button>
+       
+</form>
+ </div>
+</div>
+</div>
+<footer>Piotr Aleksander Mrzyg&#322;owski Partial Copyrights</footer>
+
+</body>
+</html>
